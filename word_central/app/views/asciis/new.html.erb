@@ -1,0 +1,19 @@
+<h1>ASCII</h1>
+
+<h2>Submit text for ascii conversion</h2>
+
+<form action="/asciis/create" method="POST">
+  <div>
+    <label for="ascii_conversion_user_text">Text</label>
+    <textarea name="ascii_conversion[user_text]" id="ascii_conversion_user_text"></textarea>
+  </div>
+
+  <button type="submit">Submit text</button>
+
+  <input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+</form>
+
+
+<%= link_to "Home", "/" %>
