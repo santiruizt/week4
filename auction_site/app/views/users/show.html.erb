@@ -1,0 +1,13 @@
+
+<p>Name: <%= @user.name %></p>
+
+<p>Description: <%= @user.email%></p>
+
+<%= link_to "Products", user_products_path(@user) %>
+<br>
+<br>
+<%= link_to "Delete", "/users/#{@user.id.to_s}/delete" , method: :delete, data: { confirm: "Are you sure?"} %>
+<br>
+<br>
+<%= link_to "Back to users", "/users" %>
+
