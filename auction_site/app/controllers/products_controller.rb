@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
 			redirect_to user_product_path(@user.id)
 		else
 			render "new"
-		end	
+		end
 
 	end
 
@@ -28,7 +28,5 @@ class ProductsController < ApplicationController
 		Product.find(params[:id]).destroy
 		redirect_to user
 	end
-
-
 
 end
